@@ -9,7 +9,7 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log("AdminLayout children:", children);
+  // console.log("AdminLayout children:", children);
   return (
     <>
       <Nav>
