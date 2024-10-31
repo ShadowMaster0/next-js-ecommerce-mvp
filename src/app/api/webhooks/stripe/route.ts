@@ -5,6 +5,9 @@ import { Resend } from "resend";
 import React from "react";
 import PurchaseReceiptEmail from "@/email/PurchaseReceipt";
 
+console.log("Stripe Key:", process.env.STRIPE_SECRET_KEY); // Check if key is loaded
+console.log("Resend API Key:", process.env.RESEND_API_KEY); // Check if key is loaded
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2024-09-30.acacia",
 });
